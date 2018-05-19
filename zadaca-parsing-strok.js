@@ -1,0 +1,13 @@
+	var a = +prompt("Сколько у вас с собой есть денег?");
+	var b = prompt("Сколько вы купили яблок?");
+	b = parseInt(b);
+	var c = prompt("Сколько вы купили батонов хлеба?");
+	c = parseInt(c);
+	var d = prompt("Сколько стоит одно яблоко?");
+	var sum_d = parseInt(d) * b;
+	var e = prompt("Сколько стоит один батон хлеба?");
+	var sum_e = parseInt(e) * c;
+	var rashod = parseInt(sum_d + sum_e);
+	var ost = a - rashod;
+	document.write(Boolean(ost));
+	document.write("<br>" + "Сдача: " + ost);
